@@ -46,12 +46,12 @@ int main() {
 //  =============================================================================
 //  getSalesAmt
 //  =============================================================================
-//	This function prompts the user to enter their monthly sales in dollars
+//	This function prompts the user to enter 3 temperatures
 // 
 //  Input: 
-//      no parameters
+//      temps, an empty array
 //  Output: 
-//      the dollar amount of sales as a float, returns to main()
+//      the user's 3 temps are pushed to the temps array
 //  =============================================================================
 void getTemps(float temps[])
 {
@@ -60,7 +60,7 @@ void getTemps(float temps[])
 
     for (int i = 0; i < SIZE; i++)
     {
-        cout << endl << "#" << i+1 << ":\t";
+        cout << endl << "#" << i + 1 << ":\t";
         cin >> temps[i];
     }
 
@@ -70,6 +70,17 @@ void getTemps(float temps[])
 //  =============================================================================
 
 
+
+//  =============================================================================
+//  calcAvg
+//  =============================================================================
+//	This function calculates the sum and average of the 3 temperatures
+// 
+//  Input: 
+//      temps, an empty array
+//  Output: 
+//      the average of the 3 temperatures is returned to main
+//  =============================================================================
 float calcAvg(float temps[])
 {
     float average;
@@ -84,8 +95,26 @@ float calcAvg(float temps[])
 
     return average;
 }
+//  =============================================================================
+//  end of calcAvg
+//  =============================================================================
 
+
+
+//  =============================================================================
+//  displayAvg
+//  =============================================================================
+//	This function displays the average of the 3 temperatures to 1 decial point
+// 
+//  Input: 
+//      average, a float of the 3 temperature averages
+//  Output: 
+//      the average of the 3 temperatures with some text is displayed
+//  =============================================================================
 void displayAvg(float average)
 {
     cout << endl << endl <<  "The average temperature is " << setprecision(1) << fixed << average << " degrees." << endl;
 }
+//  =============================================================================
+//  end of displayAvg
+//  =============================================================================
