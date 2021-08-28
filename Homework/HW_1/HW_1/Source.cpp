@@ -48,19 +48,18 @@ int main() {
 //  =============================================================================
 //  getSalesAmt
 //  =============================================================================
-//	This function prompts the user to enter their monthly sales 
+//	This function prompts the user to enter their monthly sales in dollars
 // 
 //  Input: 
 //      no parameters
 //  Output: 
-//      the dollar amount of sales as a float and returns it to main()
+//      the dollar amount of sales as a float, returns to main()
 //  =============================================================================
-
 int getSalesAmt()
 {
     float sales;
 
-    cout << "Enter monthly sales amount:\t" << endl;
+    cout << "Enter monthly sales amount: " << endl;
     cin >> sales;
 
     return sales;
@@ -105,12 +104,12 @@ int calcCommission(float sales)
 //  =============================================================================
 //  calcPay
 //  =============================================================================
-// 
+//  This function calculates the total monthly pay for the sales worked
+//  adding the commission to the base pay
 //  Input:
-//      sales - the dollar amount in sales, passed from main()
+//      commission - the dollar amount in commission result from calcCommission
 //  Output:
-//      the commission amount is calculated by a percentage of the sales amount
-//      and returned to main() 
+//      the total pay is calculated and returned to main() 
 //  =============================================================================
 int calcPay(float commission)
 {
@@ -125,7 +124,16 @@ int calcPay(float commission)
 
 
 
-
+//  =============================================================================
+//  displayPay
+//  =============================================================================
+//  This function calculates the total monthly pay for the sales worked
+//  adding the commission to the base pay
+//  Input:
+//      commission - the dollar amount in commission result from calcCommission
+//  Output:
+//      the total pay is calculated and returned to main() 
+//  =============================================================================
 void displayPay(float sales, float commission, float total)
 {
     cout << "Monthly sales:\t $ " << setprecision(2) << fixed << sales << endl << endl;
@@ -143,3 +151,6 @@ void displayPay(float sales, float commission, float total)
         main();
     }
 }
+//  =============================================================================
+//  end of displayPay
+//  =============================================================================
