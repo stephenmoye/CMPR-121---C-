@@ -58,9 +58,7 @@ void getData(int numArray[][COLS])
 	cout << endl << "Enter integers into the 2-Dimensional array:" << endl << endl;
 
 	for (int i = 0; i < ROWS; i++)
-
 	{
-
 		for (int j = 0; j < COLS; j++)
 		{
 			cout << "Enter a number: ";
@@ -89,19 +87,14 @@ void getData(int numArray[][COLS])
 //  Output: 
 //      The data of the array formatted into rows and columns
 //  =============================================================================
-void displayArray(int numArray[][COLS])
+void displayArray(int numArray[ROWS][COLS])
 {
 	cout << "Here is the data in the 2-Dimensional array:" << endl << endl;
 
-	// nested loop to output each value of the array
-
-	// outer loop handles rows
 	for (int i = 0; i < ROWS; i++)
 	{
-		// inner loop handles cols
 		for (int j = 0; j < COLS; j++)
 		{
-			// output each iteration w/ fixed formatting
 			cout << setw(6) << setprecision(3) << fixed << numArray[i][j];
 		}
 
@@ -143,4 +136,4 @@ Press any key to close this window . . .
 
 
 
-================================= Output ==================================== */
+=============================================================================== */

@@ -201,4 +201,4 @@ To automatically close the console when debugging stops, enable Tools->Options->
 Press any key to close this window . . .
 
 
-  ================================= Output ==================================== */
+  =============================================================================== */
