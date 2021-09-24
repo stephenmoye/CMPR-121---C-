@@ -2,14 +2,16 @@
 
 using namespace std;
 
+
+
+
 int main()
 {
-	struct Student
-	{
-		int id;
-		char name[20];
-		float gpa;
-	};
+	
+	char city[20];
+
+	char* ptr = &city;
+
 
 	return 0;
 }

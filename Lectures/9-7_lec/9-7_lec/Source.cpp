@@ -1,24 +1,13 @@
-#include "Student.h"
+#include <iostream>
+using namespace std;
 
-void showRecord(Student& student);
 
 int main()
 {
-	Student s1 + {333, "Tom", 3.3 };
-	Student s2 = { 54321, "Kim Adams", 4.0 };
+	char president[10] = "Abe Lincoln";
 
-	cout << "Student #1:\n";
-	showRecord(s1);
-
-	cout << "Student #2:\n";
-	showRecord(s2);
+	cout << president;
 
 	return 0;
 }
 
-void showRecord(Student& student)
-{
-	cout << "ID:	" << student.id << endl
-		<< "Name:  " << student.name << endl
-		<< "GPA:   " << student.gpa << endl << endl;
-}

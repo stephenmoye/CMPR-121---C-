@@ -1,3 +1,19 @@
+//  Attached:   HW_3f
+//
+// ===========================================================
+//  File:   HW_3f
+// ===========================================================
+//   Programmer:   Stephen Moye
+//   Class:        CMPR 121 Tuesday
+//   Instructor:   Dennis Rainey
+//
+//   Description:
+//   This program will ask the user
+//   to enter a time in military format
+//   then it will check if the time is valid
+//   add 1 second if true, and display new time
+//
+// =========================================================== 
 #include "Time.h"
 
 void getTime(Time&);
@@ -5,12 +21,13 @@ bool isTimeValid(Time&);
 void addOneSecond(Time&);
 void displayTime(Time&);
 
-
 int const MAX_HOURS = 23;
 int const MAX_MINS = 59;
 int const MAX_SECS = 59;
 
-
+// =============================================================================
+// main
+// =============================================================================
 int main()
 {
 	Time hours;
@@ -25,8 +42,22 @@ int main()
 
 	return 0;
 }
+// =============================================================================
+// end of main
+// ============================================================================= 
 
 
+
+//  =============================================================================
+//  getTime
+//  =============================================================================
+//  this function asks the user to enter the time in military format
+// 
+//  Input: 
+//      The Time struct object currentTime
+//  Output: 
+//      currentTime is updated with the user input, not returned 
+//  =============================================================================
 void getTime(Time& currentTime)
 {
 	do {
@@ -44,7 +75,22 @@ void getTime(Time& currentTime)
 
 	} while (isTimeValid(currentTime) == false);
 }
+//  =============================================================================
+//  end of getTime
+//  =============================================================================
 
+
+
+//  =============================================================================
+//  isTimeValid
+//  =============================================================================
+//  this function checks the user input to see if it is a valid time format
+// 
+//  Input: 
+//      The Time struct object currentTime
+//  Output: 
+//		true or false is returned to getTime, depending on result
+//  =============================================================================
 bool isTimeValid(Time& currentTime)
 {
 	if (((currentTime.hours >= 0) && (currentTime.hours <= MAX_HOURS)) &&
@@ -58,7 +104,22 @@ bool isTimeValid(Time& currentTime)
 		return false;
 	}
 }
+//  =============================================================================
+//  end of isTimeValid
+//  =============================================================================
 
+
+
+//  =============================================================================
+//  addOneSecond
+//  =============================================================================
+//  this function adds 1 second to the current time.
+// 
+//  Input: 
+//      The Time struct object currentTime, validated
+//  Output: 
+//      currentTime is updated after adding 1 second, not returned 
+//  =============================================================================
 void addOneSecond(Time& currentTime)
 {
 	currentTime.seconds++;
@@ -80,8 +141,22 @@ void addOneSecond(Time& currentTime)
 		}
 	}
 }
+//  =============================================================================
+//  end of addOneSecond
+//  =============================================================================
 
 
+
+//  =============================================================================
+//  displayTime
+//  =============================================================================
+//  this function displays the input time, after validation and adding 1 second.
+// 
+//  Input: 
+//      The Time struct object currentTime, validated + 1 second
+//  Output: 
+//      none
+//  =============================================================================
 void displayTime(Time& currentTime)
 {
 	char again;
@@ -101,8 +176,10 @@ void displayTime(Time& currentTime)
 	{
 		main();
 	}
-
 }
+//  =============================================================================
+//  end of displayTime
+//  =============================================================================
 
 
 
