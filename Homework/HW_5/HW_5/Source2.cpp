@@ -16,8 +16,6 @@
 #include <iostream>
 using namespace std;
 
-int main();
-
 int countVowels(char statement[], int index); // Function protoype
 	
 const int SIZE = 20;
