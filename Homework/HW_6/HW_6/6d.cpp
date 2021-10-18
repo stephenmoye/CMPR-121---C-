@@ -38,7 +38,8 @@ int mainD()
 		cout << "NAME:  ";
 		cin.getline(cat.name, SIZE);
 		// write() char to binary
-		outfile.write(cat.name, sizeof(cat.name));
+		int numbers = 0;
+		outfile.write(numbers*, sizeof(numbers));
 
 		cout << "AGE:  ";
 		cin >> cat.age;
