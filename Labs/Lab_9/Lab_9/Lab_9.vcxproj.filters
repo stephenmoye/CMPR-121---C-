@@ -18,5 +18,25 @@
     <ClCompile Include="Sculpture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Art.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Painting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Painting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Art.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sculpture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
