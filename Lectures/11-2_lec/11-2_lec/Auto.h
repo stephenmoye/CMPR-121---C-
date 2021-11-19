@@ -11,5 +11,5 @@ public:
 	Auto(int id, int year, string model, float wholesale, bool convertible);
 	~Auto();
 	void setConvertible(bool convertible);
-	void displayVehicle()const;
+	virtual void displayVehicle()const;
 };

@@ -12,6 +12,7 @@ public:
 	~Truck();
 	void setLoadCapacity(int loadCapacity);
 	void displayVehicle()const;
-	float calcRetail()const;
+	virtual float calcRetail()const;
+
 
 };

@@ -12,21 +12,28 @@
 #include "Auto.h"
 #include "Truck.h"
 
-void showRetailPrice(Vehicle& vehicle);
 
 int main() 
 {
-    Truck t2(33333, 2016, "Kenworth", 10000, 30000);
+    //Vehicle v1(33334, 2020, "Ford", 4000); // can't be instantiated due to pure virtual fn
     Auto a2(12345, 1954, "Muntz Jet", 10000, true);
-
-    cout << "Auto #2:\n";
-    showRetailPrice(a2);
-
-    cout << "Truck #2:\n";
-    showRetailPrice(t2);
+    Truck t2(33333, 2016, "Kenworth", 10000, 30000);
 
     return 0;
 }
+
+
+//void showRetailPrice(Vehicle& vehicle);
+
+/*
+Auto a2(12345, 1954, "Muntz Jet", 10000, true);
+
+cout << "Auto #2:\n";
+showRetailPrice(a2);
+
+cout << "Truck #2:\n";
+showRetailPrice(t2);
+
 
 void showRetailPrice(Vehicle& vehicle)      // static binding - comiler binds fn call 
 {
@@ -34,8 +41,6 @@ void showRetailPrice(Vehicle& vehicle)      // static binding - comiler binds fn
 }
 
 
-
-    /*
     Truck t1;
     Auto a1;
     cout << "Auto #1:\n";
