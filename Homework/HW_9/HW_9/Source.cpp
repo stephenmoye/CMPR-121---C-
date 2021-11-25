@@ -8,7 +8,7 @@
 //   Class:        CMPR 121 Tuesday
 //   Instructor:   Dennis Rainey
 //	 Description:
-//	 This program outputs differnt comparisions
+//	 This program outputs different comparisions
 //   of dogs on screen. Overloaded operators are
 //	 created to handle each case.
 //   ==============================================
