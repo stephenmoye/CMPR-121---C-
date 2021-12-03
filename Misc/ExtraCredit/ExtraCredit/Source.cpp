@@ -1,24 +1,31 @@
 #include <iostream>
-#include "Rectangle.h"
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	void displayCount(Rectangle & rectangle);
+	int number = 3;
+	float value = 3.0;
+	double amt = 5.0;
 
-	float width = 3.0;
-	float length = 5.0;
-
-
-	Rectangle rectangle;
-
-	rectangle.setDimensions(width, length);
-
-	void displayCount(Rectangle & rectangle)
-	{
-		cout << rectangle;
-	}
+	cout << number << " squared equals " << calcSquare(number) << ".\n";
 
 	return 0;
 }
+
+template <typename T> 
+T calcSquare(T number)
+{
+	return number * number;
+}
+
+//int calcSquare(int number)
+//{
+//	return number * number;
+//}
+//
+//int calcSquare(float number)
+//{
+//	return number * number;
+//}
